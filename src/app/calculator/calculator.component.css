@@ -1,0 +1,71 @@
+.container {
+    background: #ccc;
+    margin: 0 auto;
+    width: 300px;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .container * {
+    box-sizing: border-box;
+  }
+  
+  .container table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .container table tr, .container table td {
+    border: 1px solid #eee;
+  }
+  
+  .container table tr:first-child button {
+    height: 50px;
+    padding: 0 10px;
+    font-weight: 700;
+  }
+  
+  .container table tr:not(:first-child) td {
+    height: 70px;
+  }
+  
+  .container table tr:not(:first-child) td button {
+    height: 100%;
+  }
+  
+  .container table button {
+    width: 70px;
+    display: block;
+    border: 0;
+    font-size: 16px;
+  }
+  .container table button.operator {
+    font-weight: 700;
+    color: #fff;
+    background: #ffcc00;
+  }
+
+  .container table tr input {
+    height: 50px;
+    width: 100%;
+    padding: 0 10px;
+    font-weight: 700;
+  }
+  .container table tr:not(:first-child) td input {
+    height: 100%;
+    
+  }
+  .container table input {
+    width: 70px;
+    display: block;
+    border: 0;
+    font-size: 16px;
+  }
+  .submit{
+    width: 100%;
+    background: #ffcc00;
+  }
+ 
+ 
+
+

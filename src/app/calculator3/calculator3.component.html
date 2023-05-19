@@ -1,0 +1,15 @@
+<div class="container">
+    <input type="text" id="display" value={{value}} name="display" disabled />
+    <input type="text" id="input" [(ngModel)]="inputValue" (keyup)="onChange($event)" placeholder="0"  />
+    <!-- <p> {{inputValue}}</p> -->
+    <!-- value={{inputValue}} -->
+    <span class="keyboard">
+        <button *ngFor="let item of keyboards; let i = index" class="item item{{i+1}}" value="{{item}}" (click)="onClick($event)">
+            {{item}}
+        </button>
+        <
+        <button class="equals " value="=" (click)="onSubmit($event)">
+            =
+        </button>
+        </span>
+</div>

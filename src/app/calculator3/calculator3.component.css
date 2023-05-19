@@ -1,0 +1,92 @@
+.container {
+  background: #202020;
+  margin: 0 auto;
+  width: 300px;
+  height: 420px;
+  padding: 20px;
+  border-radius: 5px;
+
+}
+
+.container * {
+  box-sizing: border-box;
+}
+
+input {
+  height: 50px;
+  width: 100%;
+  padding: 10px;
+  font-weight: 700;
+  text-align: right;
+  color: white;
+  border: none;
+  background: #202020;
+  font-size: 30px;
+}
+
+#display {
+  height: 30px;
+  display: block;
+  margin: auto;
+  text-align: right;
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+} */
+input:focus {
+  outline: none;
+}
+
+.keyboard {
+  display: grid;
+  grid-template-rows: 50px 50px 50px 50px;
+  grid-template-columns: 75px 75px 75px 75px;
+  grid-gap: 1px;
+  margin: 25px 0px 10px 0px;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  /* border: 1px solid black; */
+  height: 50px;
+  font-weight: 700;
+  border-radius: 5px;
+  color: white;
+  background: darkgray;
+}
+
+.item1,
+.item2,
+.item3,
+.item4,
+.item5,
+.item6,
+.item7,
+.item8,
+.item12,
+.item16,
+.item20 {
+  background: #383535;
+}
+
+.equals {
+  grid-column: 4/5;
+  background: #156EDB;
+}
+
+button.item:hover {
+  background-color: #47a94a;
+  color: white;
+
+}

@@ -1,0 +1,25 @@
+<div class ="container">
+    
+    <input type="number" id="input" value={{inputValue1}} (input)="onChange($event)"  placeholder="0" name="display"  />
+    
+    <span class="keyboard" > 
+
+        <button  
+        *ngFor="let item of numbers; let i = index"  
+        class = "item item{{i+1}}" 
+        value="{{item}}"
+        (click)="onClick($event)">
+        {{item}}
+        </button>
+
+        <button
+        class ="equals "
+        value = "="
+        (click)="onSubmit($event)">
+        =
+        </button>
+    </span>
+    
+</div>
+
+

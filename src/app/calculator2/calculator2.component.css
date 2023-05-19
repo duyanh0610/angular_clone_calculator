@@ -1,0 +1,52 @@
+ .container {
+   background: #ccc;
+   margin: 0 auto;
+   width: 250px;
+   padding: 20px;
+   border-radius: 5px;
+ }
+
+ .item {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+
+ .container * {
+   box-sizing: border-box;
+
+ }
+
+ .keyboard {
+
+   display: grid;
+   grid-template-rows: 50px 50px 50px 50px 50px;
+   grid-template-columns: 50px 50px 50px 50px;
+   grid-gap: 10px;
+   margin: 10px
+ }
+
+ button {
+   border: 1px solid black;
+   height: 50px;
+   font-weight: 700;
+ }
+
+
+ input {
+   height: 50px;
+   width: 100%;
+   padding: 10px;
+   font-weight: 700;
+   border: 1px solid black;
+ }
+
+
+ .submit {
+   width: 100%;
+   background: #ffcc00;
+ }
+
+ .equals {
+   grid-column: 1/5;
+ }

@@ -1,0 +1,85 @@
+<div class ="container">
+    
+
+   
+    <table>
+        <tr>
+            <td colspan="4">
+                <input type="number" id="input1" value={{a}} (input)="onChange1($event)" (click)="onSelect($event)" placeholder="0" name="display"  />
+                
+                <p (click)="setOperator($event)"> {{operator}} </p>
+                
+                <input type="number" id="input2" value={{b}} (input)="onChange2($event)" (click)="onSelect($event)" placeholder="0"name="display"  />
+                
+                <p> Result is {{result}}</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button name="one" value="1" (click)="onClickNumber($event)">1</button>
+
+            </td>
+            <td>
+                <button name="two" value="2" (click)="onClickNumber($event)">2</button>
+            </td>
+            <td>
+                <button name="three" value="3" (click)="onClickNumber($event)">3</button>
+            </td>
+            <td>
+                <button class="operator" name="plus" value="+" (click)="setOperator($event)">+</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button name="four" value="4" (click)="onClickNumber($event)">4</button>
+            </td>
+                <td>
+                    <button name=" five" value="5" (click)="onClickNumber($event)">5</button>
+                </td>
+                <td>
+                    <button name=" six" value="6" (click)="onClickNumber($event)">6</button>
+                </td>
+                <td>
+                    <button class=" operator" name="minus" value="-" (click)="setOperator($event)">-</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button name="seven" value="7" (click)="onClickNumber($event)">7</button>
+            </td>
+            <td>
+                <button name="eight" value="8" (click)="onClickNumber($event)">8</button>
+            </td>
+            <td>
+                <button name="nine" value="9" (click)="onClickNumber($event)">9</button>
+            </td>
+            <td>
+                <button class="operator" name="times" value="*" (click)="setOperator($event)">x</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button class="zero" name="zero" (click)="onClickNumber($event)" value="0">0</button>
+            </td>
+            <td>
+                <button class="operator" id="del" name="del" value="del" (click)="delete($event)">Del</button>
+            </td>
+            <td>
+                <button class="operator" name="dot" value="." (click)="onClickNumber($event)" >,</button>
+            </td>
+            <td>
+                <button class="operator" name="div" value="/" (click)="setOperator($event)">/</button>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="4">
+                <input type ="button"  class="operator submit" name="equal" value="=" (click)="onSubmit($event)">
+            </td>
+        </tr>
+    </table>
+
+
+
+
+</div>
